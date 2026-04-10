@@ -143,7 +143,7 @@ setInterval(() => {
 }, 3000); */
 const track = document.getElementById('sliderTrack');
         const dotItems = document.querySelectorAll('.dotItem');
-        const totalSlides = 4;
+        const totalSlides = 5;
         let currentIndex = 0;
         let autoSlideInterval;
         function updateSlider(instant = false) {
