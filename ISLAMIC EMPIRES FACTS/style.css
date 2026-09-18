@@ -1,0 +1,327 @@
+/* style.css */
+
+:root {
+  --prussian: #003153;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --bg: #f5f0e8;
+  --bg2: #ebe4d4;
+  --text: #1a1208;
+  --text-muted: #6b5c3e;
+  --nav-bg: rgba(245, 240, 232, 0.97);
+  --nav-border: rgba(150, 100, 20, 0.3);
+  --card-bg: rgba(235, 228, 212, 0.95);
+  --shadow: 0 0px 32px rgba(0,0,0,0.15);
+}
+
+@font-face {
+  font-family: B;
+  src: url(Lodeh\ Regular.ttf);
+}
+@font-face {
+  font-family: I;
+  src: url(JacquesFrancois-Regular.ttf);
+}
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: transparent;
+  color: none;
+}
+body, html{
+  font-family: B, sans-serif;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+/*   background-color: #e6e6e6; */
+}
+body{
+  position: relative;
+}
+:root{
+  --hold-time: 3000ms;
+  --transition-time: 600ms;
+}
+#header_area{
+  position: relative;
+  top: 0px;
+  background-color: #ffffff;
+  height: 140px;
+  display: block;
+  width: 100%;
+}
+.tog_nav{
+  display: none;
+  border: none;
+  color: #003153;
+  background-color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#header_area img{
+  position: relative;
+  top: 13px;
+  left: 16%;
+  width: 120px;
+  height: 120px;
+}
+#header_area a{
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  color: black;
+  left: 25%;
+  top: 25%;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+}
+a{
+  text-decoration: none;
+}
+#navbar_area{
+  position: absolute;
+  background-color: #003153;
+  font-family: I;
+  height: 66px;
+  width: 100%;
+  margin: 0
+}
+#navbar_area .a{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#navbar_area .a .b{
+  display: inline-block;
+  position: relative;
+}
+#navbar_area .a .b .c{
+  display: block;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.5s;
+}
+#navbar_area .a .b .c:hover{
+  background-color: #003f5a;
+  border-radius: 10px;
+}
+#navbar_area .a ul{
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 99;
+}
+#navbar_area .a ul li a{
+  display: block;
+  transition: 0.3s;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #222222;
+  background-color: #fff;
+  color: #003153;
+}
+#navbar_area .a .b:hover .c{
+  background-color: #003f5a;
+  color: #fff;
+  border-radius: 10px;
+}
+#navbar_area .a ul li:first-child a{
+  border-radius: 10px 10px 0px 0px;
+}
+#navbar_area .a ul li:last-child a{
+  border-bottom: none;
+  border-radius: 0px 0px 10px 10px;
+}
+#navbar_area .a ul li:only-child a{
+  border-radius: 10px;
+}
+#navbar_area .a ul li:hover a{
+  background-color: #003f5a;
+  color: #fff;
+  cursor: pointer;
+}
+#navbar_area .a .b:hover > ul{
+  display: block;
+  transition-delay: 0.2s;
+}
+#navbar_area .a .b.show > ul{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.s_m{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  color: #003153;
+  position: absolute;
+  display: inline-block;
+  top: 215px;
+  left: 40%;
+  transition: 0.3s;
+}
+.gm{
+  left: 45%;
+}
+.x{
+  left: 50%;
+}
+.wa{
+  left: 55%;
+}
+.s_m:hover{
+  background-color: #003153;
+  color: white;
+}
+marquee{
+  font-family: I;
+  font-size: 25px;
+}
+.sliderWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  min-height: 700px;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  width: 100%;
+}
+
+.sliderTrack.noTransition {
+  transition: none;
+}
+
+.slideItem {
+  width: 80%;
+  flex-shrink: 0;
+  margin: 0 10%;      /* এক্সট্রা প্যাডিং জিরো করা হলো যাতে ডানে না সরে */
+  cursor: pointer;
+  position: relative;
+}
+.slideItem img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: var(--bg2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+.sli-subt{
+  position: relative;
+  width: 100%;     /* টেক্সট বক্স ফুল উইডথ করার জন্য */
+  height: 150px;
+  padding: 10px;
+  background-color: var(--bg2);
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: block;
+  margin: 30px 10% 0 0;
+}
+.sli-subt p{
+font-size: 20px;
+font-family: J, B;
+text-align: justify;
+}
+.sli-subt a{
+color: var(--gold);
+}
+.dotIndicators {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* পারফেক্ট মাঝখানে রাখার জন্য */
+  background-color: var(--bg2);
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  z-index: 95;
+  width: 100px;
+}
+.dotItem {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #9f9f9f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin: 1px;
+}
+.dotItem.activeDot {
+  background: #c9a84c;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+#searchbar{
+  position: relative;
+  top: 1000px;
+  min-width: 400px;
+  left: 50%;
+  margin-left: -220px;
+  padding: 5px 10px;
+  font-family: I;
+  font-size: 20px;
+  border-radius: 5px;
+  z-index: 90;
+  border: 2px solid #003153;
+}
+#searchbar:focus{
+  outline: none;
+}
+::-webkit-input-placeholder{
+  color: #003153;
+  opacity: 0.7;
+}
+#searchbtn{
+  background-color: #003153;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  font-size: 20px;
+  position: relative;
+  top: 1000px;
+  border: 1px solid #003153;
+  border-radius: 2px;
+  color: white;
+  left: 50%;
+  box-shadow: 2px 2px 5px black;
+  transition: 0.3s;
+}
+#searchbtn:active{
+  transform: translateX(2px);
+  box-shadow: none;
+  background-color: #003f5a;
+  border-color: #003f5a;
+}
+#searchbtn:hover{
+  background-color: #003f5a;
+  border-color: #003f5a;
+}
+.bld{
+  width: 50%;
+  height: 50%;
+}
