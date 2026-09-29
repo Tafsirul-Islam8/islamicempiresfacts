@@ -1,0 +1,319 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title class="main-tit">Islamic Empires Facts</title>
+  <link rel="shortcut icon" href="favief.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="multiple.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script data-goatcounter="https://tafsirul-islam8.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <img src="favief.png" alt="IEF Logo"/>
+    <span class="mt" data-lang="en">ISLAMIC EMPIRES FACTS</span>
+    <span class="mt" data-lang="bn">ইসলামিক এম্পায়ারস ফ্যাক্টস</span>
+  </a>
+
+  <!-- Mobile Hamburger -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li>
+      <a href="#" data-lang="en">ABOUT</a>
+      <a href="#" data-lang="bn">সম্পর্কে জানুন</a>
+      <div class="dropdown">
+        <a href="#" data-lang="en">Our Team</a>
+        <a href="#" data-lang="bn">আমাদের দল</a>
+        <a href="#" data-lang="en">Privacy Policy</a>
+        <a href="#" data-lang="bn">গোপনীয়তা নীতি</a>
+        <a href="#" data-lang="en">Working Method</a>
+        <a href="#" data-lang="bn">কার্যপদ্ধতি</a>
+      </div>
+    </li>
+    <li>
+      <a href="#" data-lang="en">RECENT UPDATES</a>
+      <a href="#" data-lang="bn">সাম্প্রতিক খবর</a>
+      <div class="dropdown">
+        <a href="#" data-lang="en">Governance of Saudi Arabia</a>
+        <a href="#" data-lang="bn">সৌদি আরবের শাসনব্যবস্থা</a>
+        <a href="#" data-lang="en">Power of Iran</a>
+        <a href="#" data-lang="bn">ইরানের ক্ষমতা</a>
+        <a href="#" data-lang="en">News of Palestine</a>
+        <a href="#" data-lang="bn">ফিলিস্তিনের খবর</a>
+      </div>
+    </li>
+    <li>
+      <a href="#" data-lang="en">SEARCH</a>
+      <a href="#" data-lang="bn">খুঁজুন</a>
+      <div class="dropdown">
+        <a href="#" data-lang="en">Born of Islam</a>
+        <a href="#" data-lang="bn">ইসলামের উৎপত্তি</a>
+        <a href="#" data-lang="en">Governance of Islam</a>
+        <a href="#" data-lang="bn">ইসলামের শাসনব্যবস্থা</a>
+        <a href="#megaSearchInputEn" data-lang="en">Anything</a>
+        <a href="#megaSearchInputBn" data-lang="bn">যেকোনো কিছু</a>
+      </div>
+    </li>
+    <li>
+      <a href="#" data-lang="en">CONTACT</a>
+      <a href="#" data-lang="bn">যোগাযোগ করুন</a>
+      <div class="dropdown">
+        <a href="#" data-lang="en">Our team</a>
+        <a href="#" data-lang="bn">আমাদের দল</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="nav-controls">
+    <div class="nav-search">
+      <i class="fas fa-search"></i>
+      <input class="inp_1" type="text" data-lang="en" placeholder="Search anything about Islamic History"/>
+      <input class="inp_1" type="text" data-lang="bn" placeholder="ইসলামিক ইতিহাস সম্পর্কে যেকোনো কিছু সার্চ করুন"/>
+    </div>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=islamicempiresfactsemail@gmail.com" target="_blank" class="nav-icon-btn" title="Contact via Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <select class="lang-select" id="langSelect" title="Select Language">
+      <option value="en">English (English)</option>
+      <option value="bn">Bengali (বাংলা)</option>
+    </select>
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle theme"></button>
+  </div>
+</nav>
+
+<!-- ═══ HEADER / HERO ═══ -->
+<header id="header">
+  <div class="slider" id="slider">
+    <div class="slide active" style="background-image: url('IEF_1_1.jpg')"></div>
+    <div class="slide" style="background-image: url('IEF_1_2.jpg')"></div>
+    <div class="slide" style="background-image: url('IEF_1_3.jpg')"></div>
+    <div class="slide" style="background-image: url('IEF_1_4.jpg')"></div>
+    <div class="slide" style="background-image: url('IEF_1_5.jpg')"></div>
+  </div>
+  <div class="slider-overlay"></div>
+  <div class="slider-top-fade"></div>
+
+  <div class="hero-content">
+    <img src="favief.png" alt="Islamic Empires Facts" class="hero-logo"/>
+    <h1 class="hero-title">
+      <span data-lang="en">ISLAMIC EMPIRES FACTS</span>
+      <span data-lang="bn">ইসলামী সাম্রাজ্যসমূহের তথ্যাবলি</span>
+    </h1>
+    <p class="hero-subtitle" data-lang="en">
+      <b>Assalamu Alaikum Wa Rahmatullah!<br>Welcome to ISLAMIC EMPIRES FACTS. Have you ever been interested in Caliphates, Sultanates or the Golden Era of Islam? In this site, you can get proper history with enough verified sources Insha'Allah. Continue to discover the history, rise, and legacy of the world's greatest Islamic empires. Contact us on <a class="maill" href="https://mail.google.com/mail/?view=cm&fs=1&to=islamicempiresfactsemail@gmail.com" target="_blank">mail</a>. Jazakallahu Khairan!</b>
+    </p>
+    <p class="hero-subtitle" data-lang="bn">
+      <b>আসসালামু আলাইকুম ওয়া রহমাতুল্লাহ!<br>ইসলামিক এম্পায়ারস ফ্যাক্টস এ আপনাকে স্বাগতম। আপনি কি ইসলামের খেলাফত, সালতানাত অথবা সোনালি যুগ সম্পর্কে জানতে আগ্রহী? এই সাইটে আপনি অনেক যাচাইকৃত তথ্যসহ সঠিক ইতিহাস জানতে পারবেন ইনশাআল্লাহ। যোগাযোগের জন্য মেইল করুন <a class="maill" href="https://mail.google.com/mail/?view=cm&fs=1&to=islamicempiresfactsemail@gmail.com" target="_blank">মেইলে</a>। জাজাকাল্লাহু খাইরান।</b>
+    </p>
+    
+    <div class="hero-topics" id="heroTopics">
+      <a href="#" class="topic-pill p1" data-lang="en">Rashidun Caliphate</a>
+      <a href="#" class="topic-pill p1" data-lang="bn">রাশিদুন খেলাফত</a>
+      <a href="#" class="topic-pill p2" data-lang="en">Umayyad Dynasty</a>
+      <a href="#" class="topic-pill p2" data-lang="bn">উমাইয়া রাজবংশ</a>
+      <a href="#" class="topic-pill p3" data-lang="en">Abbasid Caliphate</a>
+      <a href="#" class="topic-pill p3" data-lang="bn">আব্বাসীয় খেলাফত</a>
+      <a href="#" class="topic-pill p4" data-lang="en">Ottoman Empire</a>
+      <a href="#" class="topic-pill p4" data-lang="bn">অটোমান সাম্রাজ্য</a>
+      <a href="#" class="topic-pill p5" data-lang="en">Mughal Empire</a>
+      <a href="#" class="topic-pill p5" data-lang="bn">মুঘল সাম্রাজ্য</a>
+      <a href="#" class="topic-pill p6" data-lang="en">Safavid Dynasty</a>
+      <a href="#" class="topic-pill p6" data-lang="bn">সফবীয় রাজবংশ</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <i class="fas fa-chevron-down"></i>
+    <span class="scr" data-lang="en">SCROLL TO VISIT</span>
+    <span class="scr" data-lang="bn">স্ক্রল করতে থাকুন</span>
+  </div>
+</header>
+
+<!-- ═══ SCROLLBAR / MARQUEE ═══ -->
+<div class="scrollbar">
+  <marquee class="marq" scrollamount="5">
+    <span data-lang="en">
+      Assalamu Alaikum! Welcome to 'Islamic Empires Facts'! If you are interested about Islam or about Islamic history, you are in the correct place. In this site, you will know about Islam, Islamic history, evolution of Islam, born of Islam, wars of Islam, governance, states, empires of Islam etc. If you have any comment, you can inform us freely in <a href="#" style="color: var(--gold);">Contact</a>.
+    </span>
+    <span data-lang="bn">
+      আসসালামু আলাইকুম! 'ইসলামিক এম্পায়ারস ফ্যাক্টস' এ আপনাকে স্বাগতম! যদি আপনি ইসলাম অথবা ইসলামের ইতিহাস নিয়ে আগ্রহী হন তাহলে আপনি একদম সঠিক স্থানে এসেছেন। এই সাইটে আপনি জানতে পারবেন ইসলাম, ইসলামি ইতিহাস, ইসলামের বিবর্তন, ইসলামের জন্ম, ইসলামের যুদ্ধ, ইসলামি শাসন, রাজ্য, সাম্রাজ্য ইত্যাদি সম্পর্কে। যদি আপনার কোনো মন্তব্য থেকে থাকে, তাহলে দয়া করে আমাদের সাথে <a href="#" style="color: var(--gold);">যোগাযোগ করুন</a>।
+    </span>
+  </marquee>
+</div>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<main>
+  <!-- Visitor Counter -->
+  <div class="visitor-counter">
+    <div class="counter-half" id="counterLeft">
+      <div class="counter-icon"><i class="fas fa-users"></i></div>
+      <div class="counter-num-wrap">
+        <div class="counter-num scroll-count" id="uniqueVisitors">0</div>
+        <div class="counter-label" data-lang="en">Visitors have visited this site</div>
+        <div class="counter-label" data-lang="bn">জন ভিজিট করেছেন</div>
+      </div>
+    </div>
+    <div class="counter-divider"></div>
+    <div class="counter-half" id="counterRight">
+      <div class="counter-icon"><i class="fas fa-eye"></i></div>
+      <div class="counter-num-wrap">
+        <div class="counter-num scroll-count" id="visits"><span class="times-visited-count">0</span></div>
+        <div class="counter-label" data-lang="en">Times visited</div>
+        <div class="counter-label" data-lang="bn">বার ভিজিট করা হয়েছে</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mega Search -->
+  <div class="mega-search-wrap">
+    <div class="mega-search">
+      <i class="fas fa-search"></i>
+      <input type="text" id="megaSearchInputEn" data-lang="en" placeholder="Search anything about Islamic History...">
+      <input type="text" id="megaSearchInputBn" data-lang="bn" placeholder="ইসলামি ইতিহাস সম্পর্কে যেকোনো কিছু সার্চ করুন...">
+      <button id="megaSearchBtnEn" title="Search" data-lang="en"><i class="fas fa-magnifying-glass"></i></button>
+      <button id="megaSearchBtnBn" title="সার্চ করুন" data-lang="bn"><i class="fas fa-magnifying-glass"></i></button>
+    </div>
+  </div>
+<!-- _____SLIDER______ -->
+<div class="mainContainer">
+  <div class="sliderWrapper">
+    <div class="sliderTrack" id="sliderTrack">
+      <div class="slideItem">
+        <img src="IEF_1_1.jpg" alt="image-1">
+          <div class="sli-subt"><p><b>The Rashidun Caliphate:</b> Established in 632 CE following the death of Prophet Muhammad, the Rashidun Caliphate represents one of the most transformative eras in world history. Guided by four righteous caliphs—Abu Bakr, Umar, Uthman, and Ali—this 30-year period saw the rapid unification of Arabia, major administrative and financial reforms like the Bait al-Mal, and the decisive defeat of the Byzantine and Sasanian Empires. Dive into the complete timeline of battles, governance, and historic legacy. <a href=""><b>Read More <i class="fa-solid fa-arrow-right"></i></b></a></p></div>
+</div>
+<div class="slideItem">
+  <img src="IEF_1_2.jpg" alt="image-2">
+  <div class="sli-subt"><p>
+    
+  </p></div>
+</div>
+<div class="slideItem">
+  <img src="IEF_1_3.jpg" alt="image-3">
+  <div class="sli-subt"><p>
+
+  </p></div>
+</div>
+<div class="slideItem">
+  <img src="IEF_1_4.jpg" alt="image-4">
+  <div class="sli-subt"><p>
+
+  </p></div>
+</div>
+<div class="slideItem">
+  <img src="IEF_1_5.jpg" alt="image-5">
+  <div class="sli-subt"><p>
+
+  </p></div>
+</div>
+<div class="slideItem">
+  <img src="IEF_1_1.jpg" alt="image-1">
+          <div class="sli-subt"><p><b>The Rashidun Caliphate:</b> Established in 632 CE following the death of Prophet Muhammad, the Rashidun Caliphate represents one of the most transformative eras in world history. Guided by four righteous caliphs—Abu Bakr, Umar, Uthman, and Ali—this 30-year period saw the rapid unification of Arabia, major administrative and financial reforms like the Bait al-Mal, and the decisive defeat of the Byzantine and Sasanian Empires. Dive into the complete timeline of battles, governance, and historic legacy. <a href=""><b>Read More <i class="fa-solid fa-arrow-right"></b></i></a></p></div>
+</div>
+</div>
+</div>
+</div>
+        <div class="dotIndicators" id="dotIndicators">
+            <span class="dotItem activeDot"></span>
+            <span class="dotItem"></span>
+            <span class="dotItem"></span>
+            <span class="dotItem"></span>
+            <span class="dotItem"></span>
+        </div>
+    </div>
+
+  <!-- Main Content Card -->
+  <h2 class="section-title">Featured Articles</h2>
+  <div class="content-card">
+    <h2>Rashidun Caliphate (632–661 CE)</h2>
+    <p>📜 <strong>Overview</strong></p>
+    <p>The Rashidun Caliphate was the first Islamic state established after the death of Prophet Muhammad in 632 CE. It was led by four righteous caliphs, known as the Rashidun (Rightly Guided). This period is considered one of the most important eras in Islamic history due to its rapid expansion, strong leadership, and establishment of governance based on justice and Islamic principles.</p>
+    
+    <h3>👑 The Four Rashidun Caliphs</h3>
+    <ul>
+      <li><strong>Abu Bakr (632–634 CE)</strong> — First caliph, united Arabia after the Ridda Wars.</li>
+      <li><strong>Umar ibn al-Khattab (634–644 CE)</strong> — Expanded empire massively; conquered Persia, Egypt, parts of Byzantium.</li>
+      <li><strong>Uthman ibn Affan (644–656 CE)</strong> — Standardized the Qur'an; continued expansion.</li>
+      <li><strong>Ali ibn Abi Talib (656–661 CE)</strong> — Cousin and son-in-law of the Prophet; known for wisdom and justice.</li>
+    </ul>
+
+    <h3>🌍 Expansion</h3>
+    <ul>
+      <li>🏜️ Arabian Peninsula (fully unified)</li>
+      <li>🇪🇬 Egypt &nbsp;🇮🇶 Iraq &nbsp;🇮🇷 Persia &nbsp;🇸🇾 Syria and Levant</li>
+    </ul>
+    
+    <h3>⚔️ Important Events</h3>
+    <ul>
+      <li>Ridda Wars (632–633) – Reunified Arabia</li>
+      <li>Battle of Yarmouk (636) – Defeated Byzantines</li>
+      <li>Battle of Qadisiyyah (636) – Defeated Persians</li>
+      <li>First Fitna (656–661) – First Islamic civil war</li>
+    </ul>
+
+    <h3>📉 End</h3>
+    <p>The Rashidun Caliphate ended in 661 CE after the assassination of Ali ibn Abi Talib, giving way to the Umayyad Caliphate.</p>
+  </div>
+</main>
+
+<footer>
+  © 2026 Islamic Empires Facts &nbsp;·&nbsp; By TEAM IEF
+</footer>
+
+<script>
+  // Theme Toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  themeToggle.addEventListener('click', () => {
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+  });
+
+  // Language Toggle
+  const langSelect = document.getElementById('langSelect');
+  langSelect.addEventListener('change', () => {
+    if (langSelect.value === 'bn') {
+      document.body.classList.add('lang-bn');
+    } else {
+      document.body.classList.remove('lang-bn');
+    }
+  });
+
+  // Hero Slider
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  function nextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+  setInterval(nextSlide, 4500);
+
+  // Visitor Counter
+  if (!sessionStorage.getItem('visited_this_session')) {
+    let currentViews = parseInt(localStorage.getItem('total_page_views') || '0');
+    currentViews++;
+    localStorage.setItem('total_page_views', currentViews);
+    sessionStorage.setItem('visited_this_session', 'true');
+  }
+
+  let totalViews = localStorage.getItem('total_page_views') || '0';
+  let enViews = Number(totalViews).toLocaleString('en-US');
+  let bnViews = Number(totalViews).toLocaleString('bn-BD');
+
+  document.querySelectorAll('[data-lang="en"] .times-visited-count').forEach(el => el.innerText = enViews);
+  document.querySelectorAll('[data-lang="bn"] .times-visited-count').forEach(el => el.innerText = bnViews);
+</script>
+<script src="script.js"></script>
+<script src="multiple.js"></script>
+</body>
+</html>
